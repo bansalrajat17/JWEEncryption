@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./node_modules/jquery/dist/jquery.min.js" text="text/javascript"></script>
+
+    <script src="./JWEEncryption.js" text="text/javascript"></script>
+    <title>CREDIT CARD DETAILS</title>
+</head>
+
+<body>
+    <form>
+        <div><input type="text" id="cardNumber" name="cardNumber" value="4692017825375982" />
+            <input type="text" id="cvvData" name="cvvData" value="234" />
+            <input type="password" id="pin" name="pin" />
+            <input type="text" id="expiryMMYY" name="expiryMMYY" value="0127" />
+            <input type="text" id="nonce" name="nonce" />
+            <input type="text" id="nameOnCard" name="nameOnCard" value="Raj" />
+            <input type="checkbox" id="avsDataRequired" value="true" checked>
+            <button type="button" onclick="createTestJWEString()">encrypted key in log</button>
+        </div>
+    </form>
+</body>
+
+</html>
